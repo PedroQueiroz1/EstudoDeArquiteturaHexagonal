@@ -6,6 +6,8 @@ import com.hexagonal.adapters.in.controller.response.CustomerResponse;
 import com.hexagonal.application.core.domain.Customer;
 import com.hexagonal.application.ports.in.FindCustomerByIdInputPort;
 import com.hexagonal.application.ports.in.InsertCustomerInputPort;
+import com.hexagonal.application.ports.in.UpdateCustomerInputPort;
+import feign.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,9 @@ public class CustomerController {
 
     @Autowired
     private InsertCustomerInputPort insertCustomerInputPort;
+
+    @Autowired
+    private UpdateCustomerInputPort updateCustomerInputPort;
 
     @Autowired
     private FindCustomerByIdInputPort findCustomerByIdInputPort;
@@ -38,4 +43,15 @@ public class CustomerController {
         CustomerResponse customerResponse = customerMapper.toCustomerResponse(customer);
         return ResponseEntity.ok().body(customerResponse);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Void> update(@PathVariable final String id,
+                                       @Valid @RequestBody CustomerRequest customerRequest) {
+        Customer customer = customerMapper.toCustomer(customerRequest);
+        customer.setId(id);
+        updateCustomerInputPort.update(customer, customerRequest.getZipCode());
+
+        return ResponseEntity.noContent().build();
+    }
+
 }
