@@ -23,4 +23,5 @@ public class ReceiveValidatedCpfConsumer {
         Customer customer = customerMessageMapper.toCostumer(customerMessage);
         updateCustomerInputPort.update(customer, customerMessage.getZipCode());
     }
+
 }

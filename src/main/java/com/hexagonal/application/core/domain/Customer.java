@@ -8,6 +8,7 @@ public class Customer {
     private String cpf;
     private boolean isValidCpf;
 
+
     public String getId() {
         return id;
     }
