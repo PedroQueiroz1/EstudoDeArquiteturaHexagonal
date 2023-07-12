@@ -8,18 +8,6 @@ public class Customer {
     private String cpf;
     private boolean isValidCpf;
 
-    public Customer() {
-        this.isValidCpf = false;
-    }
-
-    public Customer(String id, String name, Address address, String cpf, boolean isValidCpf) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-        this.cpf = cpf;
-        this.isValidCpf = isValidCpf;
-    }
-
     public String getId() {
         return id;
     }

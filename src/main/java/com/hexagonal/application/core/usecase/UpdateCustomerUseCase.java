@@ -16,7 +16,8 @@ public class UpdateCustomerUseCase implements UpdateCustomerInputPort {
     public UpdateCustomerUseCase(
             FindCustomerByIdInputPort findCustomerByIdInputPort,
             FindAddressByZipCodeOutputPort findAddressByZipCodeOutputPort,
-            UpdateCustomerOutputPort updateCustomerOutputPort) {
+            UpdateCustomerOutputPort updateCustomerOutputPort
+    ) {
         this.findCustomerByIdInputPort = findCustomerByIdInputPort;
         this.findAddressByZipCodeOutputPort = findAddressByZipCodeOutputPort;
         this.updateCustomerOutputPort = updateCustomerOutputPort;
