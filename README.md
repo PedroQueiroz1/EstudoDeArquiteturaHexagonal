@@ -3,7 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/PedroQueiroz1/EstudoDeArquiteturaHexagonal?style=plastic)
 
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=RED&style=for-the-badge" #vitrinedev/>
 </p>
 
 ### Tópicos 
@@ -19,7 +19,7 @@
    Estou utilizando gradle pela primeira vez, somente pela curiosidade. Provavelmente o projeto está com alguns arquivos desnecessários do gradle!
   
 ## Ferramentas utilizadas
-[![My Skills](https://skillicons.dev/icons?i=java,gradle,kafka)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,gradle,kafka,mongodb)](https://skillicons.dev)
 
 ## Acesso ao projeto
 
