@@ -19,7 +19,7 @@
    Estou utilizando gradle pela primeira vez, somente pela curiosidade. Provavelmente o projeto está com alguns arquivos desnecessários do gradle!
   
 ## Ferramentas utilizadas
-[![My Skills](https://skillicons.dev/icons?i=java,gradle,kafka,mongodb)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,gradle,kafka,mongodb,docker)](https://skillicons.dev)
 
 ## Acesso ao projeto
 
