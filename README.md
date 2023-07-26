@@ -23,4 +23,4 @@
 
 ## Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/PedroQueiroz1/EstudoDeJSPeServlets).
+Você pode [acessar o código fonte do projeto](https://github.com/PedroQueiroz1/EstudoDeArquiteturaHexagonal).
